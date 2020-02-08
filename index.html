@@ -1,27 +1,38 @@
 <!doctype html>
 <html>
 <head>
-  <title>송상록 실습용 웹사이트</title>
+  <title>송상록 실습용 웹페이지</title>
   <meta charset="utf-8">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157829403-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-157829403-1');
-  </script>
+  <style>
+    #active {
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .saw {
+      color: blue;
+    }
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
-  <h1><a href="index.html">송상록</a></h1>
+  <h1>송상록 실습용 웹페이지</h1>
   <ol>
-    <li><a href="1.html">송상록이란 무엇인가?</a></li>
-    <li><a href="2.html">송상록의 음식취향</a></li>
-    <li><a href="3.html">대왕판다</a></li>
-    <li><a href="4.html">HTML</a></li>
+    <li><a href="index.html" class="saw" id="active">메인 페이지</a></li>
+    <li><a href="1.html" class="saw">송상록이란 무엇인가?</a></li>
+    <li><a href="2.html" class="saw">송상록의 음식취향</a></li>
+    <li><a href="3.html" class="saw">대왕판다</a></li>
+    <li><a href="4.html" class="saw">HTML</a></li>
   </ol>
+
+  <p><strong>오른쪽 아래의 초록색 버튼을 누르시면 채팅이 가능합니다</strong></p>
 
   <h2>상록수(Evergreen Tree)</h2>
   <img src="300px-448_Sangnoksu_Sign.jpg" width=30%>
@@ -29,8 +40,7 @@
   <p>보통 잎이 좁은 상록침엽수와 잎이 넓은 상록활엽수로 나뉘는데 북쪽지방으로 갈수록 상록침엽수가 많고, 남쪽지방으로 갈수록 상록활엽수가 많다.</p>
   <p>상록수는 겨울이 되면 나뭇잎을 이루는 세포 속에 들어 있는 액체의 농도가 진해진다. 그래서 기온이 내려가도 뿌리에서 물을 잘 빨아들이고 나뭇잎이 잘 얼지도 않는다.</p>
 
-  <h3>오른쪽 아래의 초록색 버튼을 누르시면 채팅이 가능합니다</h3>
-  <h3>방명록 - 익명 보장</h3>
+  <h2>방명록 - 익명 보장</h2>
   <div id="lv-container" data-id="city" data-uid="MTAyMC80ODUwNy8yNTAwMQ==">
     <script type="text/javascript">
      (function(d, s) {

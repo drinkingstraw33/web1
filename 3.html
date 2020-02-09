@@ -8,36 +8,57 @@
       font-family: 'Arita-dotum-Medium';
       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
       font-weight: normal;
-      font-style: normal; }
+      font-style: normal;
+    }
+
     body {
-      font-family: "Arita-dotum-Medium"
+      font-family: "Arita-dotum-Medium";
+      margin: 0;
     }
-    #active {
-      font-weight: bold;
-      text-decoration: none;
+
+    #grid {
+      display: grid;
+      grid-template-columns: 195px 1fr;
     }
-    .saw {
-    color: blue;
+
+    #grid ol {
+      border-right: 2px solid gray;
+      width: 150px;
+      margin: 0px;
+      padding: 15px;
+      padding-left: 30px;
     }
+
+    #grid #article {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     a {
       color: blue;
       text-decoration: underline;
     }
+
     h1 {
       font-size: 45px;
       text-align: center;
+      border-bottom: 2px solid gray;
+      margin: 0;
+      padding: 15px;
     }
   </style>
 </head>
 <body>
   <h1>송상록 실습용 웹페이지</h1>
+  <div id='grid'>
   <ol>
-    <li><a href="index.html" class="saw">메인 페이지</a></li>
-    <li><a href="1.html" class="saw">송상록이란 무엇인가?</a></li>
-    <li><a href="2.html" class="saw">송상록의 음식취향</a></li>
-    <li><a href="3.html" class="saw" id="active">대왕판다</a></li>
-    <li><a href="4.html" class="saw">HTML</a></li>
+    <li><a href="index.html">메인 페이지</a></li>
+    <li><a href="1.html">송상록이란 무엇인가?</a></li>
+    <li><a href="2.html">송상록의 음식취향</a></li>
+    <li><a href="3.html">대왕판다</a></li>
+    <li><a href="4.html">HTML</a></li>
   </ol>
+  <div id='article'>
   <h2>대왕판다</h2>
   <h3>귀여워....</h3>
   <p>
@@ -47,6 +68,8 @@
     <strong>귀여운 판다 동영상을 보고 싶으시면, 아래 사진을 눌러 주세요!</strong>
   </p>
   <a href="https://www.youtube.com/watch?v=unKI78hW6LI" title="귀여운 판다 동영상 보러가기" target="_blank"><img src="panda.jpg" width="30%"></a>
+    </div>
+    </div>
   <p style='font-size: 13px;'>이 제작물은 아모레퍼시픽의 아리따글꼴을 사용하여 디자인 되었습니다.</p>
 </body>
 </html>

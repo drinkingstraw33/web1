@@ -8,41 +8,64 @@
       font-family: 'Arita-dotum-Medium';
       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
       font-weight: normal;
-      font-style: normal; }
+      font-style: normal;
+    }
+
     body {
-      font-family: "Arita-dotum-Medium"
+      font-family: "Arita-dotum-Medium";
+      margin: 0;
     }
-    #active {
-      font-weight: bold;
-      text-decoration: none;
+
+    #grid {
+      display: grid;
+      grid-template-columns: 195px 1fr;
     }
-    .saw {
-      color: blue;
+
+    #grid ol {
+      border-right: 2px solid gray;
+      width: 150px;
+      margin: 0px;
+      padding: 15px;
+      padding-left: 30px;
     }
+
+    #grid #article {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     a {
       color: blue;
       text-decoration: underline;
     }
+
     h1 {
       font-size: 45px;
       text-align: center;
+      border-bottom: 2px solid gray;
+      margin: 0;
+      padding: 15px;
     }
   </style>
 </head>
 
 <body>
   <h1>송상록 실습용 웹페이지</h1>
+  <div id="grid">
   <ol>
-    <li><a href="index.html" class="saw">메인 페이지</a></li>
-    <li><a href="1.html" class="saw">송상록이란 무엇인가?</a></li>
-    <li><a href="2.html" class="saw">송상록의 음식취향</a></li>
-    <li><a href="3.html" class="saw">대왕판다</a></li>
-    <li><a href="4.html" class="saw" id="active">HTML</a></li>
+    <li><a href="index.html">메인 페이지</a></li>
+    <li><a href="1.html">송상록이란 무엇인가?</a></li>
+    <li><a href="2.html">송상록의 음식취향</a></li>
+    <li><a href="3.html">대왕판다</a></li>
+    <li><a href="4.html">HTML</a></li>
   </ol>
+  <div id="article">
   <h2>HTML</h2>
   <p>
     Hypertext Markup Language (HTML) is the standard markup language for <strong>creating web pages</strong> and web applications. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p><p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
     </p>
+  </div>
+  </div>
 <p style='font-size: 13px;'>이 제작물은 아모레퍼시픽의 아리따글꼴을 사용하여 디자인 되었습니다.</p>
 </body>
 </html>

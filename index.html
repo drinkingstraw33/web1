@@ -11,13 +11,22 @@
       font-style: normal; }
     body {
       font-family: "Arita-dotum-Medium";
+      margin: 0;
       }
-    #active {
-      font-weight: bold;
-      text-decoration: none;
+    #grid {
+      display: grid;
+      grid-template-columns: 195px 1fr;
     }
-    .saw {
-      color: blue;
+    #grid ol {
+      border-right: 2px solid gray;
+      width: 150px;
+      margin: 0px;
+      padding: 15px;
+      padding-left: 30px;
+    }
+    #grid #article {
+      padding-left: 15px;
+      padding-right: 15px;
     }
     a {
       color: blue;
@@ -26,57 +35,60 @@
     h1 {
       font-size: 45px;
       text-align: center;
+      border-bottom: 2px solid gray;
+      margin: 0;
+      padding: 15px;
     }
   </style>
 </head>
 
 <body>
   <h1>송상록 실습용 웹페이지</h1>
-  <ol>
-    <li><a href="index.html" class="saw" id="active">메인 페이지</a></li>
-    <li><a href="1.html" class="saw">송상록이란 무엇인가?</a></li>
-    <li><a href="2.html" class="saw">송상록의 음식취향</a></li>
-    <li><a href="3.html" class="saw">대왕판다</a></li>
-    <li><a href="4.html" class="saw">HTML</a></li>
-  </ol>
+  <div id="grid">
+    <ol>
+      <li><a href="index.html">메인 페이지</a></li>
+      <li><a href="1.html">송상록이란 무엇인가?</a></li>
+      <li><a href="2.html">송상록의 음식취향</a></li>
+      <li><a href="3.html">대왕판다</a></li>
+      <li><a href="4.html">HTML</a></li>
+    </ol>
+    <div id="article">
+      <p><strong>오른쪽 아래의 초록색 버튼을 누르시면 채팅이 가능합니다</strong></p>
+      <h2>상록수(Evergreen Tree)</h2>
+      <img src="300px-448_Sangnoksu_Sign.jpg" width=30%>
+      <p>낙엽수와 달리, 계절에 상관없이 늘 잎이 푸른 것을 의미한다. 간혹가다 오해하는 도시 사람들도 있는데, 낙엽이 안생기는게 아니라 상시 수명이 다한 잎을 떨구고 새로운 잎을 만들어내는 거다. 그리고 상록수도 계절에 따라 잎사귀를 한꺼번에 많이 털갈이 하는 종들이 있다.</p>
+      <p>보통 잎이 좁은 상록침엽수와 잎이 넓은 상록활엽수로 나뉘는데 북쪽지방으로 갈수록 상록침엽수가 많고, 남쪽지방으로 갈수록 상록활엽수가 많다.</p>
+      <p>상록수는 겨울이 되면 나뭇잎을 이루는 세포 속에 들어 있는 액체의 농도가 진해진다. 그래서 기온이 내려가도 뿌리에서 물을 잘 빨아들이고 나뭇잎이 잘 얼지도 않는다.</p>
+      <h2>방명록 - 익명 보장</h2>
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80ODUwNy8yNTAwMQ==">
+        <script type="text/javascript">
+        (function(d, s) {
+            var j, e = d.getElementsByTagName(s)[0];
 
-  <p><strong>오른쪽 아래의 초록색 버튼을 누르시면 채팅이 가능합니다</strong></p>
+            if (typeof LivereTower === 'function') { return; }
 
-  <h2>상록수(Evergreen Tree)</h2>
-  <img src="300px-448_Sangnoksu_Sign.jpg" width=30%>
-  <p>낙엽수와 달리, 계절에 상관없이 늘 잎이 푸른 것을 의미한다. 간혹가다 오해하는 도시 사람들도 있는데, 낙엽이 안생기는게 아니라 상시 수명이 다한 잎을 떨구고 새로운 잎을 만들어내는 거다. 그리고 상록수도 계절에 따라 잎사귀를 한꺼번에 많이 털갈이 하는 종들이 있다.</p>
-  <p>보통 잎이 좁은 상록침엽수와 잎이 넓은 상록활엽수로 나뉘는데 북쪽지방으로 갈수록 상록침엽수가 많고, 남쪽지방으로 갈수록 상록활엽수가 많다.</p>
-  <p>상록수는 겨울이 되면 나뭇잎을 이루는 세포 속에 들어 있는 액체의 농도가 진해진다. 그래서 기온이 내려가도 뿌리에서 물을 잘 빨아들이고 나뭇잎이 잘 얼지도 않는다.</p>
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
 
-  <h2>방명록 - 익명 보장</h2>
-  <div id="lv-container" data-id="city" data-uid="MTAyMC80ODUwNy8yNTAwMQ==">
-    <script type="text/javascript">
-     (function(d, s) {
-         var j, e = d.getElementsByTagName(s)[0];
-
-         if (typeof LivereTower === 'function') { return; }
-
-         j = d.createElement(s);
-         j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-         j.async = true;
-
-         e.parentNode.insertBefore(j, e);
-     })(document, 'script');
-    </script>
-  <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+            e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+        </script>
+      <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+      </div>
+      <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5e3a9a3fa89cda5a188440f6/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+    </div>
   </div>
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5e3a9a3fa89cda5a188440f6/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-
-  <p style='font-size: 13px;'>이 제작물은 아모레퍼시픽의 아리따글꼴을 사용하여 디자인 되었습니다.</p>
+<p style='font-size: 13px;'>이 제작물은 아모레퍼시픽의 아리따글꼴을 사용하여 디자인 되었습니다.</p>
 </body>
 </html>

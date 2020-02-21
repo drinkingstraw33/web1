@@ -9,17 +9,17 @@
       margin: 0;
     }
     ol {
-      border-right: 2px solid gray;
       width: 150px;
       margin: 0px;
-      padding: 15px;
+      padding: 20px;
     }
     #grid {
       display: grid;
       grid-template-columns: 195px 1fr;
     }
-    #grid ol {
-      padding-left: 30px;
+    #grid #left {
+      border-right: 2px solid gray;
+      padding-left: 10px;
     }
     #grid #article {
       padding-left: 15px;
@@ -40,7 +40,7 @@
       #grid {
         display: block;
       }
-      ol {
+      #left {
         border-right: none;
       }
     }

@@ -40,7 +40,7 @@
       #grid {
         display: block;
       }
-      #left {
+      #grid #left {
         border-right: none;
       }
     }
